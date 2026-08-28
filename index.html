@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Página web moderna y responsive con diseño atractivo, tarjetas informativas y compatibilidad total con celular y computadora." />
-  <title>Mi Página Web Moderna</title>
+  <meta name="description" content="MotoZone — Motos deportivas, urbanas y touring. Encuentra tu moto ideal con todas las especificaciones." />
+  <title>MotoZone</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Favicon inline SVG -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>" />
 </head>
 <body>
 
   <!-- ── Header / Navbar ─────────────────────────────────────────────────── -->
   <header>
     <nav>
-      <a href="#inicio" class="nav-logo">Mi<span>Web</span></a>
+      <a href="#inicio" class="nav-logo">Moto<span>Zone</span></a>
 
       <ul class="nav-links" id="navLinks" role="list">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#caracteristicas">Características</a></li>
-        <li><a href="#estadisticas">Estadísticas</a></li>
+        <li><a href="#motos">Modelos</a></li>
+        <li><a href="#stats">Rendimiento</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
 
@@ -37,85 +36,104 @@
     </nav>
   </header>
 
-  <!-- ── Hero / Bienvenida ───────────────────────────────────────────────── -->
+  <!-- ── Hero ───────────────────────────────────────────────────────────── -->
   <section id="inicio" class="hero">
     <div class="hero-content">
-      <div class="hero-badge">✨ Bienvenido</div>
-      <h1>Tu presencia digital<br />empieza aquí</h1>
+      <div class="hero-badge">🏁 La adrenalina en tu ADN</div>
+      <h1>Domina cada<br />kilómetro</h1>
       <p>
-        Una página moderna, rápida y completamente responsive, diseñada para
-        lucir perfecta tanto en celular como en computadora.
+        Descubre la colección MotoZone: potencia, estilo y tecnología en las
+        motos más codiciadas del mercado.
       </p>
       <div class="hero-cta">
-        <a href="#caracteristicas" class="btn btn-white">Ver características</a>
-        <a href="#contacto" class="btn btn-outline-white">Contáctanos</a>
+        <a href="#motos" class="btn btn-red">Ver modelos</a>
+        <a href="#contacto" class="btn btn-outline">Contáctanos</a>
       </div>
+    </div>
+    <div class="hero-image" aria-hidden="true">
+      <svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Motocicleta deportiva">
+        <!-- Rueda trasera -->
+        <circle cx="130" cy="230" r="60" fill="none" stroke="#333" stroke-width="18"/>
+        <circle cx="130" cy="230" r="30" fill="#1a1a1a" stroke="#444" stroke-width="4"/>
+        <circle cx="130" cy="230" r="8" fill="#e00"/>
+        <!-- Rueda delantera -->
+        <circle cx="390" cy="230" r="60" fill="none" stroke="#333" stroke-width="18"/>
+        <circle cx="390" cy="230" r="30" fill="#1a1a1a" stroke="#444" stroke-width="4"/>
+        <circle cx="390" cy="230" r="8" fill="#e00"/>
+        <!-- Chasis / cuerpo -->
+        <polygon points="160,230 200,120 300,110 370,170 370,230" fill="#222" stroke="#444" stroke-width="2"/>
+        <!-- Carenado superior -->
+        <polygon points="200,120 260,80 340,95 370,170 300,110" fill="#c00" stroke="#800" stroke-width="2"/>
+        <!-- Tanque -->
+        <ellipse cx="260" cy="130" rx="60" ry="28" fill="#b00" stroke="#800" stroke-width="2"/>
+        <!-- Asiento -->
+        <ellipse cx="210" cy="148" rx="50" ry="14" fill="#111" stroke="#333" stroke-width="2"/>
+        <!-- Horquilla delantera -->
+        <line x1="340" y1="150" x2="390" y2="230" stroke="#555" stroke-width="10" stroke-linecap="round"/>
+        <line x1="360" y1="145" x2="390" y2="230" stroke="#444" stroke-width="6" stroke-linecap="round"/>
+        <!-- Manillar -->
+        <line x1="340" y1="125" x2="370" y2="115" stroke="#666" stroke-width="7" stroke-linecap="round"/>
+        <!-- Escape -->
+        <path d="M165,220 Q140,250 110,245" fill="none" stroke="#555" stroke-width="8" stroke-linecap="round"/>
+        <!-- Faro -->
+        <ellipse cx="378" cy="155" rx="14" ry="10" fill="#ffdd44" opacity="0.9"/>
+        <!-- Reflejo carenado -->
+        <path d="M270,85 Q290,78 310,88" fill="none" stroke="#ff4444" stroke-width="3" opacity="0.6"/>
+      </svg>
     </div>
   </section>
 
-  <!-- ── Tarjetas / Características ─────────────────────────────────────── -->
-  <section id="caracteristicas" class="section">
+  <!-- ── Tarjetas de Motos ───────────────────────────────────────────────── -->
+  <section id="motos" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="tag">Lo que ofrecemos</span>
-        <h2>Todo lo que necesitas en un solo lugar</h2>
-        <p>Herramientas, información y recursos diseñados para impulsar tus proyectos al siguiente nivel.</p>
+        <span class="tag">Nuestra flota</span>
+        <h2>Encuentra tu moto ideal</h2>
+        <p>Tres categorías pensadas para cada estilo de piloto.</p>
       </div>
 
       <div class="cards-grid">
 
+        <!-- Deportiva -->
         <div class="card reveal">
-          <div class="card-icon icon-purple">🎨</div>
-          <h3>Diseño Moderno</h3>
-          <p>
-            Interfaz limpia con colores vibrantes, tipografía cuidada y
-            animaciones suaves que mejoran la experiencia del usuario.
-          </p>
+          <div class="card-emoji">🏎️</div>
+          <div class="card-category">Deportiva</div>
+          <h3>ZX-R 1000</h3>
+          <p>La bestia de la pista. Aerodinámica agresiva y potencia extrema para los que viven al límite.</p>
+          <ul class="specs">
+            <li><span class="spec-label">Velocidad</span><span class="spec-value">299 km/h</span></li>
+            <li><span class="spec-label">Cilindrada</span><span class="spec-value">1 000 cc</span></li>
+            <li><span class="spec-label">Precio</span><span class="spec-value">$18 500</span></li>
+          </ul>
+          <button class="btn btn-red btn-full">Ver detalles</button>
         </div>
 
+        <!-- Urbana -->
         <div class="card reveal">
-          <div class="card-icon icon-cyan">📱</div>
-          <h3>100 % Responsive</h3>
-          <p>
-            Adaptado a cualquier pantalla: smartphones, tablets, laptops y
-            monitores de escritorio. Ningún usuario se queda fuera.
-          </p>
+          <div class="card-emoji">🛵</div>
+          <div class="card-category">Urbana</div>
+          <h3>StreetX 650</h3>
+          <p>Ágil y versátil para la ciudad. Perfecta para el día a día con un toque de estilo naked.</p>
+          <ul class="specs">
+            <li><span class="spec-label">Velocidad</span><span class="spec-value">200 km/h</span></li>
+            <li><span class="spec-label">Cilindrada</span><span class="spec-value">650 cc</span></li>
+            <li><span class="spec-label">Precio</span><span class="spec-value">$9 200</span></li>
+          </ul>
+          <button class="btn btn-red btn-full">Ver detalles</button>
         </div>
 
+        <!-- Touring -->
         <div class="card reveal">
-          <div class="card-icon icon-green">⚡</div>
-          <h3>Alto Rendimiento</h3>
-          <p>
-            Código liviano y optimizado. Sin dependencias externas innecesarias
-            para que la carga sea instantánea.
-          </p>
-        </div>
-
-        <div class="card reveal">
-          <div class="card-icon icon-orange">🔒</div>
-          <h3>Seguro y Confiable</h3>
-          <p>
-            Buenas prácticas de seguridad incorporadas desde el inicio, con
-            HTML semántico y accesibilidad garantizada.
-          </p>
-        </div>
-
-        <div class="card reveal">
-          <div class="card-icon icon-pink">🌐</div>
-          <h3>GitHub Pages Ready</h3>
-          <p>
-            Listo para publicar directamente con GitHub Pages. Solo sube los
-            archivos y tu sitio estará en línea en minutos.
-          </p>
-        </div>
-
-        <div class="card reveal">
-          <div class="card-icon icon-blue">🛠️</div>
-          <h3>Fácil de Personalizar</h3>
-          <p>
-            Variables CSS centralizadas para cambiar colores, fuentes y
-            espaciados con mínimo esfuerzo.
-          </p>
+          <div class="card-emoji">🌍</div>
+          <div class="card-category">Touring</div>
+          <h3>RoadKing GT</h3>
+          <p>Confort kilométrico. Diseñada para largas distancias con tecnología de navegación integrada.</p>
+          <ul class="specs">
+            <li><span class="spec-label">Velocidad</span><span class="spec-value">240 km/h</span></li>
+            <li><span class="spec-label">Cilindrada</span><span class="spec-value">1 250 cc</span></li>
+            <li><span class="spec-label">Precio</span><span class="spec-value">$22 000</span></li>
+          </ul>
+          <button class="btn btn-red btn-full">Ver detalles</button>
         </div>
 
       </div>
@@ -123,23 +141,23 @@
   </section>
 
   <!-- ── Estadísticas ────────────────────────────────────────────────────── -->
-  <section id="estadisticas" class="stats">
+  <section id="stats" class="stats">
     <div class="stats-grid">
       <div class="stat-item">
-        <h3><span data-target="100" data-suffix="%">0%</span></h3>
-        <p>Responsive</p>
+        <h3><span data-target="299" data-suffix=" km/h">0</span></h3>
+        <p>Velocidad máxima</p>
       </div>
       <div class="stat-item">
-        <h3><span data-target="6" data-suffix="">0</span> Secciones</h3>
-        <p>bien estructuradas</p>
+        <h3><span data-target="3" data-suffix="">0</span> Categorías</h3>
+        <p>Deportiva · Urbana · Touring</p>
       </div>
       <div class="stat-item">
-        <h3><span data-target="0" data-suffix="">0</span> Externas</h3>
-        <p>Dependencias externas</p>
+        <h3><span data-target="1250" data-suffix=" cc">0</span></h3>
+        <p>Mayor cilindrada</p>
       </div>
       <div class="stat-item">
-        <h3><span data-target="3" data-suffix="">0</span> Archivos</h3>
-        <p>HTML · CSS · JS</p>
+        <h3><span data-target="100" data-suffix="%">0</span></h3>
+        <p>Adrenalina garantizada</p>
       </div>
     </div>
   </section>
@@ -148,18 +166,16 @@
   <section id="contacto" class="cta-section">
     <div class="container">
       <div class="cta-box reveal">
-        <h2>¿Listo para comenzar?</h2>
+        <h2>¿Lista para rugir?</h2>
         <p>
-          Publica tu sitio en minutos con GitHub Pages. Solo necesitas subir
-          estos tres archivos y activar la opción en tu repositorio.
+          Visita nuestro concesionario o escríbenos. Un asesor especialista te
+          ayudará a elegir la moto perfecta para ti.
         </p>
         <a
-          href="https://pages.github.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-white"
+          href="mailto:info@motozone.com"
+          class="btn btn-red"
         >
-          🚀 Publicar en GitHub Pages
+          📩 Escríbenos ahora
         </a>
       </div>
     </div>
@@ -168,7 +184,7 @@
   <!-- ── Footer ─────────────────────────────────────────────────────────── -->
   <footer>
     <p>
-      Hecho con ❤️ usando HTML, CSS &amp; JavaScript · Publicado con
+      © 2024 MotoZone · Hecho con ❤️ y HTML, CSS &amp; JavaScript ·
       <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
     </p>
   </footer>
