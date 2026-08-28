@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página web moderna y responsive con diseño atractivo, tarjetas informativas y compatibilidad total con celular y computadora." />
+  <title>Mi Página Web Moderna</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+</head>
+<body>
+
+  <!-- ── Header / Navbar ─────────────────────────────────────────────────── -->
+  <header>
+    <nav>
+      <a href="#inicio" class="nav-logo">Mi<span>Web</span></a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#estadisticas">Estadísticas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── Hero / Bienvenida ───────────────────────────────────────────────── -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✨ Bienvenido</div>
+      <h1>Tu presencia digital<br />empieza aquí</h1>
+      <p>
+        Una página moderna, rápida y completamente responsive, diseñada para
+        lucir perfecta tanto en celular como en computadora.
+      </p>
+      <div class="hero-cta">
+        <a href="#caracteristicas" class="btn btn-white">Ver características</a>
+        <a href="#contacto" class="btn btn-outline-white">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Tarjetas / Características ─────────────────────────────────────── -->
+  <section id="caracteristicas" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Lo que ofrecemos</span>
+        <h2>Todo lo que necesitas en un solo lugar</h2>
+        <p>Herramientas, información y recursos diseñados para impulsar tus proyectos al siguiente nivel.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <div class="card-icon icon-purple">🎨</div>
+          <h3>Diseño Moderno</h3>
+          <p>
+            Interfaz limpia con colores vibrantes, tipografía cuidada y
+            animaciones suaves que mejoran la experiencia del usuario.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon icon-cyan">📱</div>
+          <h3>100 % Responsive</h3>
+          <p>
+            Adaptado a cualquier pantalla: smartphones, tablets, laptops y
+            monitores de escritorio. Ningún usuario se queda fuera.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon icon-green">⚡</div>
+          <h3>Alto Rendimiento</h3>
+          <p>
+            Código liviano y optimizado. Sin dependencias externas innecesarias
+            para que la carga sea instantánea.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon icon-orange">🔒</div>
+          <h3>Seguro y Confiable</h3>
+          <p>
+            Buenas prácticas de seguridad incorporadas desde el inicio, con
+            HTML semántico y accesibilidad garantizada.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon icon-pink">🌐</div>
+          <h3>GitHub Pages Ready</h3>
+          <p>
+            Listo para publicar directamente con GitHub Pages. Solo sube los
+            archivos y tu sitio estará en línea en minutos.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon icon-blue">🛠️</div>
+          <h3>Fácil de Personalizar</h3>
+          <p>
+            Variables CSS centralizadas para cambiar colores, fuentes y
+            espaciados con mínimo esfuerzo.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Estadísticas ────────────────────────────────────────────────────── -->
+  <section id="estadisticas" class="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3><span data-target="100" data-suffix="%">0%</span></h3>
+        <p>Responsive</p>
+      </div>
+      <div class="stat-item">
+        <h3><span data-target="6" data-suffix="">0</span> Secciones</h3>
+        <p>bien estructuradas</p>
+      </div>
+      <div class="stat-item">
+        <h3><span data-target="0" data-suffix="">0</span> Externas</h3>
+        <p>Dependencias externas</p>
+      </div>
+      <div class="stat-item">
+        <h3><span data-target="3" data-suffix="">0</span> Archivos</h3>
+        <p>HTML · CSS · JS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA / Contacto ─────────────────────────────────────────────────── -->
+  <section id="contacto" class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>¿Listo para comenzar?</h2>
+        <p>
+          Publica tu sitio en minutos con GitHub Pages. Solo necesitas subir
+          estos tres archivos y activar la opción en tu repositorio.
+        </p>
+        <a
+          href="https://pages.github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-white"
+        >
+          🚀 Publicar en GitHub Pages
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────── -->
+  <footer>
+    <p>
+      Hecho con ❤️ usando HTML, CSS &amp; JavaScript · Publicado con
+      <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
